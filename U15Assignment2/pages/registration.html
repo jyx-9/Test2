@@ -1,0 +1,66 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness on mobile devices -->
+    <title>Charity Website - Registration</title> <!-- Title of the web page displayed in the browser tab -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Link to the external CSS file for styling -->
+    <script src="../scripts/script.js" defer></script> <!-- Link to the external JavaScript file -->
+</head>
+<body>
+    <header> <!-- Header section containing the logo, charity name, and navigation menu -->
+        <img src="../images/logo.png" alt="Charity Logo" class="logo"> <!-- Logo for the website, displayed on all pages -->
+        <h1>Charity Name</h1> <!-- Name of the charity, displayed on all pages -->
+        <h2>Registration</h2> <!-- Page header to distinguish this page -->
+        <nav> <!-- Navigation bar containing links to other pages -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dates_fees.html">Dates & Fees</a></li>
+                <li><a href="registration.html" id="current-page">Registration</a></li>
+                <li><a href="slovak_school.html">Slovak School</a></li>
+                <li><a href="events.html">Events & Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container"> <!-- Container to hold all sections -->
+            <section id="online-registration"> <!-- Section for online registration form -->
+                <h2>Online Registration Form</h2>
+                <form id="myForm"> <!-- Form element with an ID to handle submission with JavaScript -->
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                    
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                    
+                    <label for="social">Social Media (Optional):</label>
+                    <input type="text" id="social" name="social">
+                    
+                    <button type="submit">Submit</button> <!-- Button to submit the form -->
+                </form>
+            </section>
+            
+            <section id="paper-request"> <!-- Section for requesting a paper copy -->
+                <h2>Request a Paper Copy</h2>
+                <p>If you prefer a paper form, click the button below to request one.</p>
+                <button onclick="requestPaperCopy()">Request Paper Copy</button> <!-- Button triggers a JavaScript function -->
+            </section>
+        </div>
+    </main>
+    
+    <footer> <!-- Footer section containing copyright information -->
+        <p>&copy; 2025 Charity Name. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slovenské Vzdelávacie Centrum – South Manchester Registration</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../scripts/script.js" defer></script>
+    <style>
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .form-container label, .form-container input, .form-container textarea, .form-container button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .form-container button {
+            text-align: center;
+            padding: 10px;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Charity Logo" class="logo">
+        <h1>Slovenské Vzdelávacie Centrum – South Manchester</h1>
+        <h2>Registration</h2>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dates_fees.html">Dates & Fees</a></li>
+                <li><a href="registration.html" id="current-page">Registration</a></li>
+                <li><a href="slovak_school.html">Slovak School</a></li>
+                <li><a href="events.html">Events & Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section id="registration-info">
+                <h2>Registration Forms</h2>
+                <p>To participate in Slovenské Vzdelávacie Centrum – South Manchester, you may need to complete one of the following registration forms, depending on your involvement.</p>
+                <h3>Slovak School Registration</h3>
+                <p>All students enrolling in our Slovak School must complete a registration form to ensure we provide the best possible learning experience tailored to their needs.</p>
+                <h3>How to Register</h3>
+                <ol>
+                    <li>Complete the School Registration Form
+                        <ul>
+                            <li>Access the form <a href="#">here</a> (Insert hyperlink if available)</li>
+                            <li>Paper copies are available upon request via email or at our sessions.</li>
+                        </ul>
+                    </li>
+                    <li>Submit Your Form
+                        <ul>
+                            <li>Online: Fill out and submit electronically.</li>
+                            <li>In-person: Bring the completed form to your first session.</li>
+                            <li>By email: Scan and send your completed form to [your email address].</li>
+                        </ul>
+                    </li>
+                    <li>Receive Confirmation
+                        <ul>
+                            <li>We will confirm your place via email.</li>
+                            <li>You will receive payment instructions and further details about your first session.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>What Information is Required?</h3>
+                <ul>
+                    <li>Student details (name, age, language background)</li>
+                    <li>Parent/guardian contact information</li>
+                    <li>Emergency contact details</li>
+                    <li>Medical or special educational needs (SEN) information</li>
+                    <li>Preferred session (AM or PM)</li>
+                    <li>Consent for photos, videos, and data handling</li>
+                </ul>
+            </section>
+            
+            <section id="paper-request"> 
+                <h2>Request a Paper Copy</h2>
+                <p>If you prefer a paper form, please complete the following request form.</p>
+                <div class="form-container">
+                    <form id="paperRequestForm">
+			<label for="formchoice">Form that you want paper copy:</label>
+			<input type="text" id=" formchoice " name=" formchoice ">
+
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                        
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" required></textarea>
+                        
+                        <label for="mobile">Mobile Number:</label>
+                        <input type="tel" id="mobile" name="mobile" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Slovenské Vzdelávacie Centrum – South Manchester. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("paperRequestForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("We have received your request.");
+        });
+    </script>
+</body>
+</html>
